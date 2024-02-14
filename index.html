@@ -52,11 +52,36 @@
                         cursor: url(cursor.png) 16 16, auto !important;
                 }
 
-                #glory {
-                        font-size: 24px;
-                        font-family: "Times New Roman";
-                        cursor: url(cursor.png) 16 16, auto !important;
-                }
+              #glory {
+    font-size: 24px;
+    font-family: "Times New Roman";
+    cursor: url(cursor.png) 16 16, auto !important;
+    animation: rainbowAnimation 5s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes rainbowAnimation {
+    0% {
+        color: #ff0000; /* Red */
+    }
+    16.666% {
+        color: #ff9900; /* Orange */
+    }
+    33.333% {
+        color: #ffff00; /* Yellow */
+    }
+    50% {
+        color: #00ff00; /* Green */
+    }
+    66.666% {
+        color: #0000ff; /* Blue */
+    }
+    83.333% {
+        color: #9900ff; /* Purple */
+    }
+    100% {
+        color: #ff0000; /* Back to Red */
+    }
+}
 
                 #subtext {
                         position: absolute;
