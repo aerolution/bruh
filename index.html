@@ -52,7 +52,7 @@
                         cursor: url(cursor.png) 16 16, auto !important;
                 }
 
-                #katlyn {
+                #glory {
                         font-size: 72px;
                         font-family: "Segoe UI";
                         cursor: url(cursor.png) 16 16, auto !important;
@@ -170,7 +170,7 @@
                 function loaded() {
                         const main = document.getElementById("main")
                         const submain = document.getElementById("submain")
-                        const katlyn = document.getElementById("micah")
+                        const glory = document.getElementById("glory")
                         const subtext = document.getElementById("subtext")
                         const audio = document.getElementById("audio")
                         const volume = document.getElementById("volume")
@@ -188,7 +188,7 @@
                         }
                         volume.onmousemove = () => audio.volume = volume.value / 100
                         audio.ontimeupdate = () => audio.volume = volume.value / 100
-                        window.onfocus = () => document.title = "micah"
+                        window.onfocus = () => document.title = "glory"
                         window.onblur = () => document.title = "\u200E"
                         volume.value = 10
                         audio.volume = volume.value / 100
@@ -201,7 +201,7 @@
 
                         async function button_animation(btn, fn) {
                                 btn.disabled = true
-                                btn.style.animation = "0.05s inkatlynte alternate backwards blink"
+                                btn.style.animation = "0.05s ingloryte alternate backwards blink"
                                 
                                 await sleep(500)
                                 submain.style.transition = "transform .1s ease-in-out, opacity .1s ease-in-out"
@@ -231,16 +231,16 @@
                                 return button
                         }
 
-                        function projects(...buttons) {
-                                const sun = create_button(() => window.open("https://sayslursdodrugs.fun/"), "image host")
-                                const inkatlynte = create_button(() => window.open("https://micahs.online/"), "second site")
+                        function others(...buttons) {
+                                const sun = create_button(() => window.open("https://ur-a.imbecile.cloud/"), "image host")
+                                const ingloryte = create_button(() => window.open("https://soundcloud.com/gloromanii"), "soundcloud")
                                 const go_back = create_button(() => {
                                         button_animation(go_back, () => {
                                                 for (let i = 0; i < buttons.length; i++)
                                                         buttons[i].style.display = "unset"
                                                         
                                                 sun.remove()
-                                                inkatlynte.remove()
+                                                ingloryte.remove()
                                                 go_back.remove()
                                         })
                                 }, "go back")
@@ -260,10 +260,10 @@
                                         countdown.style.opacity = .7
                                         document.body.onclick = ""
                                         document.body.onkeydown = ""
-                                        katlyn.style.transition = "opacity .5s ease-in-out"
-                                        katlyn.style.opacity = "0"
+                                        glory.style.transition = "opacity .5s ease-in-out"
+                                        glory.style.opacity = "0"
                                         button_animation(subtext, () => {
-                                                katlyn.remove()
+                                                glory.remove()
                                                 subtext.remove()
                                                 submain.style.border = "unset"
 
@@ -273,9 +273,9 @@
 
                                                 const twitch_button = create_button(() => window.open("https://roblox.com/users/4940412529/profile"), "roblox")
                                                 
-                                                const projects_button = create_button(() => {
-                                                        button_animation(projects_button, () => projects(youtube_button, twitch_button, projects_button))
-                                                }, "projects")
+                                                const others_button = create_button(() => {
+                                                        button_animation(others_button, () => others(youtube_button, twitch_button, others_button))
+                                                }, "others")
                                         })
                                         setInterval(() => {
                                                 const now = Date.now()
@@ -308,7 +308,7 @@
                                                         clearInterval(text_update_02)
                                                         subtext.style.opacity = "0"
                                                         subtext.innerHTML = "click to continue..."
-                                                        subtext.style.animation = "1s inkatlynte alternate backwards blink"
+                                                        subtext.style.animation = "1s ingloryte alternate backwards blink"
                                                         
                                                         document.body.onkeydown = resume
                                                         document.body.onclick = resume
